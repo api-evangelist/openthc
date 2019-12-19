@@ -1,0 +1,1494 @@
+{
+    "id": "b03ce2ecc4c7872d22aec82046d7edbf",
+    "name": "OpenTHC API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "e7312a5dc7a6613eeada4a0c47c0ee81",
+            "name": "Authenticate to the System",
+            "url": "https\/\/auth\/open",
+            "description": "Authenticates to the system with a username & password or other credentials, responds with a cookie and a session identifer",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "abae463068ca9bef3c58ddae4559652f",
+            "name": "Validate a Session Token",
+            "url": "https\/\/auth\/ping",
+            "description": "Verify a Session Token is still valid, provide one of the following parameters",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "SID provided via Bearer token, it's probablly the best one to use",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "openthc",
+                    "description": "SID provided via cookie, named 'openthc'",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "aa29689b0a41fc7a359f546e28c7efc5",
+            "name": "Close the Session",
+            "url": "https\/\/auth\/shut",
+            "description": "Terminates the session, cleans up any lingering cache data",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "SID provided via Bearer token, it's probablly the best one to use",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "openthc",
+                    "description": "SID provided via cookie, named 'openthc'",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "03d773a175422621d768dce66e03ce9c",
+            "name": "Search Company Data",
+            "url": "https\/\/company",
+            "description": "Company, top level grouping of a business",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "q",
+                    "description": "Search Term.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "edb380c9e4a1d1b66549a38cab3a9f44",
+            "name": "Create a Company",
+            "url": "https\/\/company",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "3fc80d5f66212955c1f6be6df19f5d67",
+            "name": "Company",
+            "url": "https\/\/company\/{id}",
+            "description": "A Company contains one or more License objects and one or more Contact objects",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the Company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "3d5fa486fb7cc5e5c06f1bee20c7b8e5",
+            "name": "Search the License Data",
+            "url": "https\/\/license",
+            "description": "License, attached to a Company",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "50eb205200cd415f0af4854eea14bf10",
+            "name": "Create a License",
+            "url": "https\/\/license",
+            "description": "Create a new license",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "5837fbaa0c872e35a61e1881e7cabb55",
+            "name": "License",
+            "url": "https\/\/license\/{id}",
+            "description": "A Company contains one or more License objects",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the Company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "6c660b69a265f1bd7bb01bd90dff0122",
+            "name": "Update a License",
+            "url": "https\/\/license\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "d3216189a30224ba77e2e24d02de681e",
+            "name": "Contacts",
+            "url": "https\/\/contact",
+            "description": "Contacts are members of a Company",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "email",
+                    "description": "The Email",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "phone",
+                    "description": "The Email",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "1fbbc3dc31863c482d6b84827e6fc711",
+            "name": "Contacts",
+            "url": "https\/\/contact\/{id}",
+            "description": "Contacts are members of a Company",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the Company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "e817282c5b234abd23964ff04810d1b5",
+            "name": "Search Product Data",
+            "url": "https\/\/product",
+            "description": "Product, a Container for one or more Lot objects.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "q",
+                    "description": "Search Term.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "f42334f27198e60eb5e505b020aa7337",
+            "name": "Create a Product",
+            "url": "https\/\/product",
+            "description": "Product defines attributes of an Inventory Lot such as Weight\/Volume, Package Size",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "c475656e5d9c58913cb840966f35067d",
+            "name": "Get Specific Product Data",
+            "url": "https\/\/product\/{id}",
+            "description": "Product defines attributes of an Inventory Lot such as Weight\/Volume, Package Size",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the Company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "d593356b15f58315baf0dc0798075a9f",
+            "name": "Update a Product",
+            "url": "https\/\/product\/{id}",
+            "description": "Product defines attributes of an Inventory Lot such as Weight\/Volume, Package Size",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "524aa33264b25cd3f821553306762dc3",
+            "name": "Get List of Product Types",
+            "url": "https\/\/product-type",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "6683e64b86ae18a99a0ab2a47d3351d0",
+            "name": "Create Product Type",
+            "url": "https\/\/product-type",
+            "description": "Create a new product type",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "c5b25b8826acfd6fefc6690840a444ed",
+            "name": "Modify Product Type",
+            "url": "https\/\/product-type\/{id}",
+            "description": "Update a product type",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the Company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "ed1bb1a8087f1f78f6e246b9bd3d6d53",
+            "name": "Delete Product Type",
+            "url": "https\/\/product-type\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the Company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "d41b48007b98a353ae2c262ed4dd742c",
+            "name": "Get a LIst of all the Zones",
+            "url": "https\/\/zone",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "b9dfa123e9411fae9b633787055bc7b4",
+            "name": "Create a Zone (aka: Area or Room)",
+            "url": "https\/\/zone",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "c0b9a2595db513c54ae9df673a7517e2",
+            "name": "Update a Zone (aka: Area or Room)",
+            "url": "https\/\/zone\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "4910b279b4f6323f0b81b5bc1aa6c51f",
+            "name": "Get a list of Inventory Objects",
+            "url": "https\/\/lot",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "4d5d20da5331fcdedcb98e3af2e08ac0",
+            "name": "Create or Update an Inventory object",
+            "url": "https\/\/lot",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "69f9757980460bb0b5aab0184b3951b8",
+            "name": "View Inventory Item",
+            "url": "https\/\/lot\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the Company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "c061467a56a87ea2e3633f0723d53991",
+            "name": "Modify Inventory Item",
+            "url": "https\/\/lot\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the Company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "strain",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "description",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "is_medical",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "cdce9affdc705b2bda0f038c125a73df",
+            "name": "Delete the Inventory",
+            "url": "https\/\/lot\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the Company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dt",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "reason_code",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "reason_text",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "e317ba73cc61f85da595da46bea65bd7",
+            "name": "Get a List of Plants",
+            "url": "https\/\/plant",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "q",
+                    "description": "Search Term.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "5999313155b7ab805b2eb534ea042a94",
+            "name": "Create a Plant",
+            "url": "https\/\/plant",
+            "description": "Create a New Plant from Seeds, Clones",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "a6461ba4adf2c30f8fbafdd886a31746",
+            "name": "Modify Plant Data",
+            "url": "https\/\/plant\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the Company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "strain",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "propagation_source",
+                    "description": "Designate the Plant as a Propagation Source (aka: Mother)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "zone",
+                    "description": "Indicate the Zone (Area, Room) the Plant is in",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "2d466d8e2eab1a26aadc315b4a43b191",
+            "name": "Delete the Plants",
+            "url": "https\/\/plant\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the Company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dt",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "reason_code",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "reason_text",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "dfc53777e9cab1992311a08dc01af00a",
+            "name": "Collect Materials from a Plant",
+            "url": "https\/\/plant\/{id}\/collect",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the Company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "389b1c508ce51450c357b7cf78a66429",
+            "name": "Close the Plant Operations",
+            "url": "https\/\/plant\/{id}\/finish",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the Company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dt",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "411e97bd0788c397d850f18c3b3abebf",
+            "name": "Convert Multiple Inventory Items to a Single Batch\/Lot",
+            "url": "https\/\/lot\/convert",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "87e24158369436d5f217dbd072cf930f",
+            "name": "Get a Search for Lab Items",
+            "url": "https\/\/lab",
+            "description": "Search\/List All Lab Items the Session has access to, for an Operator it's all the Lab Samples they have sent, for a Laboratory its the Samples that have been sent to them",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "q",
+                    "description": "Search Term.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "company",
+                    "description": "The Company who has supplied the Inventory",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "inventory",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dt0",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dt1",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "db891b4455d10652aff4eda11bbc7fc1",
+            "name": "Get a Specific Sample",
+            "url": "https\/\/lab\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the Company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "eeb1db0187b90e34f3fc6055b9142806",
+            "name": "Void a Lab Sample",
+            "url": "https\/\/lab\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the Company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "58bdcbc1225f6c1519de2d160fff9eb8",
+            "name": "Get just the Lab Result Details for this specific Lab Sample",
+            "url": "https\/\/lab\/{id}\/result",
+            "description": "Lab Results are ....",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the Company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "c7788dfa727e7e45a9da1fcd66bc3801",
+            "name": "Modify\/Update the Lab Results",
+            "url": "https\/\/lab\/{id}\/result",
+            "description": "Modify one or more metrics for a specific Lab result",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the Company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "372d985f223d731611b91c64fbc1c8fd",
+            "name": "Get Export or Import Transfers List",
+            "url": "https\/\/transfer",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "type",
+                    "description": "Type of Transfer",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "q",
+                    "description": "Search Term.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dt0",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dt1",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "f29ffa6a53b72b4a3af6762e7501b7f2",
+            "name": "Create Transfer",
+            "url": "https\/\/transfer",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "a2c7d81ac49359252a4ef9eb49b1e5b6",
+            "name": "Get Specific Transfer",
+            "url": "https\/\/transfer\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "3a7ff85acc2656ac6eb408358f14cd91",
+            "name": "Update a Transfer",
+            "url": "https\/\/transfer\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the Company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "03ebbb052a3d344916d1c6c7c0444fda",
+            "name": "Void the Transfer",
+            "url": "https\/\/transfer\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the Company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "c4b159aa847e88a8ed68162d37c51584",
+            "name": "Get Sale Data",
+            "url": "https\/\/sale",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "eaeb26cc06ee058621fc1037056e6486",
+            "name": "Post a Sale",
+            "url": "https\/\/sale",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        },
+        {
+            "id": "02e7e531a4f7f8e24e81c015e364af56",
+            "name": "Void a Sale",
+            "url": "https\/\/sale",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "rawModeData": ""
+        }
+    ]
+}
