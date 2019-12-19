@@ -1,0 +1,71 @@
+{
+    "name": "OpenTHC",
+    "description": "OpenTHC is a suite of time-saving tools that can be used by all parts of the cannabis community. Growers, processors, labs, retailers, regulators and software developers can benefit from open-source and licensed offerings from OpenTHC.",
+    "image": "https:\/\/openthc.com\/img\/logo.png",
+    "tags": [
+        "analytics",
+        "cannabis",
+        "compliance",
+        "have api",
+        "labs",
+        "new",
+        "pos",
+        "profile",
+        "regulators",
+        "regulatory",
+        "regulatory compliance",
+        "retail pos",
+        "samples"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/openthc\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "OpenTHC API",
+            "description": null,
+            "image": "https:\/\/openthc.com\/img\/logo.png",
+            "humanURL": "http:\/\/openthc.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/openthc-api.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/openthc-api-openapi.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Blog",
+            "url": "https:\/\/openthc.com\/blog\/"
+        },
+        {
+            "type": "Developers",
+            "url": "https:\/\/openthc.com\/api\/"
+        },
+        {
+            "type": "GitHub",
+            "url": "https:\/\/github.com\/openthc"
+        },
+        {
+            "type": "Self-Service Registration",
+            "url": "https:\/\/openthc.com\/auth\/open"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/openthc"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/openthc.com"
+        }
+    ]
+}
