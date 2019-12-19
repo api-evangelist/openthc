@@ -1,0 +1,686 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "OpenTHC API",
+        "description": "OpenTHC Data Model and JSON-API reference",
+        "termsOfService": "https:\/\/openthc.org\/about\/tos"
+    },
+    "servers": [
+        "https\/"
+    ],
+    "paths": {
+        "\/auth\/open": {
+            "post": {
+                "summary": "Authenticate to the System",
+                "description": "Authenticates to the system with a username & password or other credentials, responds with a cookie and a session identifer",
+                "operationId": "AuthenticatesToTheSystemWithAUsernamePasswordOrOtherCredentialsRespondsWithACookieAnd",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/auth\/ping": {
+            "get": {
+                "summary": "Validate a Session Token",
+                "description": "Verify a Session Token is still valid, provide one of the following parameters",
+                "operationId": "VerifyASessionTokenIsStillValidProvideOneOfTheFollowingParameters",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "SID provided via Bearer token, it's probablly the best one to use"
+                    },
+                    {
+                        "name": "openthc",
+                        "in": "header",
+                        "description": "SID provided via cookie, named 'openthc'"
+                    }
+                ]
+            }
+        },
+        "\/auth\/shut": {
+            "get": {
+                "summary": "Close the Session",
+                "description": "Terminates the session, cleans up any lingering cache data",
+                "operationId": "TerminatesTheSessionCleansUpAnyLingeringCacheData",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "SID provided via Bearer token, it's probablly the best one to use"
+                    },
+                    {
+                        "name": "openthc",
+                        "in": "header",
+                        "description": "SID provided via cookie, named 'openthc'"
+                    }
+                ]
+            }
+        },
+        "\/company": {
+            "get": {
+                "summary": "Search Company Data",
+                "description": "Company, top level grouping of a business",
+                "operationId": "CompanyTopLevelGroupingOfABusiness",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "Search Term."
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a Company",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/company\/{id}": {
+            "get": {
+                "summary": "Company",
+                "description": "A Company contains one or more License objects and one or more Contact objects",
+                "operationId": "ACompanyContainsOneOrMoreLicenseObjectsAndOneOrMoreContactObjects",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID of the Company"
+                    }
+                ]
+            }
+        },
+        "\/license": {
+            "get": {
+                "summary": "Search the License Data",
+                "description": "License, attached to a Company",
+                "operationId": "LicenseAttachedToACompany",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Create a License",
+                "description": "Create a new license",
+                "operationId": "CreateANewLicense",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/license\/{id}": {
+            "get": {
+                "summary": "License",
+                "description": "A Company contains one or more License objects",
+                "operationId": "ACompanyContainsOneOrMoreLicenseObjects",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID of the Company"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Update a License",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/contact": {
+            "get": {
+                "summary": "Contacts",
+                "description": "Contacts are members of a Company",
+                "operationId": "ContactsAreMembersOfACompany",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "query",
+                        "description": "The Email"
+                    },
+                    {
+                        "name": "phone",
+                        "in": "query",
+                        "description": "The Email"
+                    }
+                ]
+            }
+        },
+        "\/contact\/{id}": {
+            "get": {
+                "summary": "Contacts",
+                "description": "Contacts are members of a Company",
+                "operationId": "ContactsAreMembersOfACompany",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID of the Company"
+                    }
+                ]
+            }
+        },
+        "\/product": {
+            "get": {
+                "summary": "Search Product Data",
+                "description": "Product, a Container for one or more Lot objects.",
+                "operationId": "ProductAContainerForOneOrMoreLotObjects",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "Search Term."
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a Product",
+                "description": "Product defines attributes of an Inventory Lot such as Weight\/Volume, Package Size",
+                "operationId": "ProductDefinesAttributesOfAnInventoryLotSuchAsWeightvolumePackageSize",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/product\/{id}": {
+            "get": {
+                "summary": "Get Specific Product Data",
+                "description": "Product defines attributes of an Inventory Lot such as Weight\/Volume, Package Size",
+                "operationId": "ProductDefinesAttributesOfAnInventoryLotSuchAsWeightvolumePackageSize",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID of the Company"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Update a Product",
+                "description": "Product defines attributes of an Inventory Lot such as Weight\/Volume, Package Size",
+                "operationId": "ProductDefinesAttributesOfAnInventoryLotSuchAsWeightvolumePackageSize",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/product-type": {
+            "get": {
+                "summary": "Get List of Product Types",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Create Product Type",
+                "description": "Create a new product type",
+                "operationId": "CreateANewProductType",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/product-type\/{id}": {
+            "post": {
+                "summary": "Modify Product Type",
+                "description": "Update a product type",
+                "operationId": "UpdateAProductType",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID of the Company"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete Product Type",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID of the Company"
+                    }
+                ]
+            }
+        },
+        "\/zone": {
+            "get": {
+                "summary": "Get a LIst of all the Zones",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Create a Zone (aka: Area or Room)",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/zone\/{id}": {
+            "post": {
+                "summary": "Update a Zone (aka: Area or Room)",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/lot": {
+            "get": {
+                "summary": "Get a list of Inventory Objects",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Create or Update an Inventory object",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/lot\/{id}": {
+            "get": {
+                "summary": "View Inventory Item",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID of the Company"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Modify Inventory Item",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID of the Company"
+                    },
+                    {
+                        "name": "strain",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "description",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "is_medical",
+                        "in": "formData",
+                        "description": ""
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete the Inventory",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID of the Company"
+                    },
+                    {
+                        "name": "dt",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "reason_code",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "reason_text",
+                        "in": "formData",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/plant": {
+            "get": {
+                "summary": "Get a List of Plants",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "Search Term."
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a Plant",
+                "description": "Create a New Plant from Seeds, Clones",
+                "operationId": "CreateANewPlantFromSeedsClones",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/plant\/{id}": {
+            "post": {
+                "summary": "Modify Plant Data",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID of the Company"
+                    },
+                    {
+                        "name": "strain",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "propagation_source",
+                        "in": "formData",
+                        "description": "Designate the Plant as a Propagation Source (aka: Mother)"
+                    },
+                    {
+                        "name": "zone",
+                        "in": "formData",
+                        "description": "Indicate the Zone (Area, Room) the Plant is in"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete the Plants",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID of the Company"
+                    },
+                    {
+                        "name": "dt",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "reason_code",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "reason_text",
+                        "in": "formData",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/plant\/{id}\/collect": {
+            "post": {
+                "summary": "Collect Materials from a Plant",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID of the Company"
+                    }
+                ]
+            }
+        },
+        "\/plant\/{id}\/finish": {
+            "post": {
+                "summary": "Close the Plant Operations",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID of the Company"
+                    },
+                    {
+                        "name": "dt",
+                        "in": "formData",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/lot\/convert": {
+            "post": {
+                "summary": "Convert Multiple Inventory Items to a Single Batch\/Lot",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/lab": {
+            "get": {
+                "summary": "Get a Search for Lab Items",
+                "description": "Search\/List All Lab Items the Session has access to, for an Operator it's all the Lab Samples they have sent, for a Laboratory its the Samples that have been sent to them",
+                "operationId": "SearchlistAllLabItemsTheSessionHasAccessToForAnOperatorItsAllTheLabSamplesTheyHave",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "Search Term."
+                    },
+                    {
+                        "name": "company",
+                        "in": "query",
+                        "description": "The Company who has supplied the Inventory"
+                    },
+                    {
+                        "name": "inventory",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "dt0",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "dt1",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/lab\/{id}": {
+            "get": {
+                "summary": "Get a Specific Sample",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID of the Company"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Void a Lab Sample",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID of the Company"
+                    }
+                ]
+            }
+        },
+        "\/lab\/{id}\/result": {
+            "get": {
+                "summary": "Get just the Lab Result Details for this specific Lab Sample",
+                "description": "Lab Results are ....",
+                "operationId": "LabResultsAre",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID of the Company"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Modify\/Update the Lab Results",
+                "description": "Modify one or more metrics for a specific Lab result",
+                "operationId": "ModifyOneOrMoreMetricsForASpecificLabResult",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID of the Company"
+                    }
+                ]
+            }
+        },
+        "\/transfer": {
+            "get": {
+                "summary": "Get Export or Import Transfers List",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Type of Transfer"
+                    },
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "Search Term."
+                    },
+                    {
+                        "name": "dt0",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "dt1",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create Transfer",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/transfer\/{id}": {
+            "get": {
+                "summary": "Get Specific Transfer",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Update a Transfer",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID of the Company"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Void the Transfer",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID of the Company"
+                    }
+                ]
+            }
+        },
+        "\/sale": {
+            "get": {
+                "summary": "Get Sale Data",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Post a Sale",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "delete": {
+                "summary": "Void a Sale",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
