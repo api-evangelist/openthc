@@ -1,5 +1,5 @@
 {
-    "id": "b03ce2ecc4c7872d22aec82046d7edbf",
+    "id": "6e071743c3f3a7cf9a7a9f04813787ad",
     "name": "OpenTHC API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "e7312a5dc7a6613eeada4a0c47c0ee81",
+            "id": "fa90c07b6160faf24532fcf37eb87ed2",
             "name": "Authenticate to the System",
             "url": "https\/\/auth\/open",
             "description": "Authenticates to the system with a username & password or other credentials, responds with a cookie and a session identifer",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "abae463068ca9bef3c58ddae4559652f",
+            "id": "1bbb9ac969a103252fd61efa103edb1d",
             "name": "Validate a Session Token",
             "url": "https\/\/auth\/ping",
             "description": "Verify a Session Token is still valid, provide one of the following parameters",
@@ -67,11 +67,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "aa29689b0a41fc7a359f546e28c7efc5",
+            "id": "15034b7753fdf1a56d31d670cd21e38c",
             "name": "Close the Session",
             "url": "https\/\/auth\/shut",
             "description": "Terminates the session, cleans up any lingering cache data",
@@ -105,11 +105,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "03d773a175422621d768dce66e03ce9c",
+            "id": "001bde9d29eccaa41799214cbfcdf511",
             "name": "Search Company Data",
             "url": "https\/\/company",
             "description": "Company, top level grouping of a business",
@@ -136,11 +136,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "edb380c9e4a1d1b66549a38cab3a9f44",
+            "id": "e50e1274a15e2d30768bd1e0d5faf764",
             "name": "Create a Company",
             "url": "https\/\/company",
             "description": "",
@@ -159,11 +159,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "3fc80d5f66212955c1f6be6df19f5d67",
+            "id": "4449e2603f587e7f51087fe4f799b195",
             "name": "Company",
             "url": "https\/\/company\/{id}",
             "description": "A Company contains one or more License objects and one or more Contact objects",
@@ -190,11 +190,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "3d5fa486fb7cc5e5c06f1bee20c7b8e5",
+            "id": "b4a66bdae8618ef98a2c4342affe1739",
             "name": "Search the License Data",
             "url": "https\/\/license",
             "description": "License, attached to a Company",
@@ -213,11 +213,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "50eb205200cd415f0af4854eea14bf10",
+            "id": "6f5f4d1e873af29373019e982a3a8802",
             "name": "Create a License",
             "url": "https\/\/license",
             "description": "Create a new license",
@@ -236,11 +236,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "5837fbaa0c872e35a61e1881e7cabb55",
+            "id": "af8e22a7f4abe46fda8c4114e57a0b66",
             "name": "License",
             "url": "https\/\/license\/{id}",
             "description": "A Company contains one or more License objects",
@@ -267,11 +267,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "6c660b69a265f1bd7bb01bd90dff0122",
+            "id": "a3c5580bc839d296ff85fef88e1f9f4e",
             "name": "Update a License",
             "url": "https\/\/license\/{id}",
             "description": "",
@@ -290,11 +290,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "d3216189a30224ba77e2e24d02de681e",
+            "id": "7dd3385b28193ee4d2dc4c530e0ab756",
             "name": "Contacts",
             "url": "https\/\/contact",
             "description": "Contacts are members of a Company",
@@ -328,11 +328,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "1fbbc3dc31863c482d6b84827e6fc711",
+            "id": "08d14748395b1d8b77002a05740b7395",
             "name": "Contacts",
             "url": "https\/\/contact\/{id}",
             "description": "Contacts are members of a Company",
@@ -359,11 +359,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "e817282c5b234abd23964ff04810d1b5",
+            "id": "5b8615a5f894b19cef4e9ea21966a50f",
             "name": "Search Product Data",
             "url": "https\/\/product",
             "description": "Product, a Container for one or more Lot objects.",
@@ -390,11 +390,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "f42334f27198e60eb5e505b020aa7337",
+            "id": "8ed2d1af728b7e0bc94516850bba0f90",
             "name": "Create a Product",
             "url": "https\/\/product",
             "description": "Product defines attributes of an Inventory Lot such as Weight\/Volume, Package Size",
@@ -413,11 +413,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "c475656e5d9c58913cb840966f35067d",
+            "id": "514954fd0cc2395c6d1f8ba744504f2c",
             "name": "Get Specific Product Data",
             "url": "https\/\/product\/{id}",
             "description": "Product defines attributes of an Inventory Lot such as Weight\/Volume, Package Size",
@@ -444,11 +444,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "d593356b15f58315baf0dc0798075a9f",
+            "id": "1f8a5c03b505639972ca6d8618c54c7e",
             "name": "Update a Product",
             "url": "https\/\/product\/{id}",
             "description": "Product defines attributes of an Inventory Lot such as Weight\/Volume, Package Size",
@@ -467,11 +467,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "524aa33264b25cd3f821553306762dc3",
+            "id": "becdda9141f8db85a89a6f8fccbd672d",
             "name": "Get List of Product Types",
             "url": "https\/\/product-type",
             "description": "",
@@ -490,11 +490,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "6683e64b86ae18a99a0ab2a47d3351d0",
+            "id": "3ec80b64877c64217e4b8ee657492b4b",
             "name": "Create Product Type",
             "url": "https\/\/product-type",
             "description": "Create a new product type",
@@ -513,11 +513,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "c5b25b8826acfd6fefc6690840a444ed",
+            "id": "9d36166bcd0ddf21061f1338835fc85d",
             "name": "Modify Product Type",
             "url": "https\/\/product-type\/{id}",
             "description": "Update a product type",
@@ -544,11 +544,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "ed1bb1a8087f1f78f6e246b9bd3d6d53",
+            "id": "40356d3ef92cb0e126c503984326cb0d",
             "name": "Delete Product Type",
             "url": "https\/\/product-type\/{id}",
             "description": "",
@@ -575,11 +575,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "d41b48007b98a353ae2c262ed4dd742c",
+            "id": "936dfac368b1a9265556c9aac4cf4ea8",
             "name": "Get a LIst of all the Zones",
             "url": "https\/\/zone",
             "description": "",
@@ -598,11 +598,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "b9dfa123e9411fae9b633787055bc7b4",
+            "id": "6529caee1eebd949c91946dd708d7993",
             "name": "Create a Zone (aka: Area or Room)",
             "url": "https\/\/zone",
             "description": "",
@@ -621,11 +621,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "c0b9a2595db513c54ae9df673a7517e2",
+            "id": "6c38c914b3d351657c88fc5b77079260",
             "name": "Update a Zone (aka: Area or Room)",
             "url": "https\/\/zone\/{id}",
             "description": "",
@@ -644,11 +644,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "4910b279b4f6323f0b81b5bc1aa6c51f",
+            "id": "8cf84b384aabd4270bd640163fc70921",
             "name": "Get a list of Inventory Objects",
             "url": "https\/\/lot",
             "description": "",
@@ -667,11 +667,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "4d5d20da5331fcdedcb98e3af2e08ac0",
+            "id": "cb49685e9f3ac62e598784a89fff64f6",
             "name": "Create or Update an Inventory object",
             "url": "https\/\/lot",
             "description": "",
@@ -690,11 +690,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "69f9757980460bb0b5aab0184b3951b8",
+            "id": "a03eaf0df670878909cabdc6062f6e1a",
             "name": "View Inventory Item",
             "url": "https\/\/lot\/{id}",
             "description": "",
@@ -721,11 +721,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "c061467a56a87ea2e3633f0723d53991",
+            "id": "f94a4413ebab5e93e9bd113f2616a51e",
             "name": "Modify Inventory Item",
             "url": "https\/\/lot\/{id}",
             "description": "",
@@ -773,11 +773,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "cdce9affdc705b2bda0f038c125a73df",
+            "id": "d98fb7396d73a97781b51fd93575fe48",
             "name": "Delete the Inventory",
             "url": "https\/\/lot\/{id}",
             "description": "",
@@ -825,11 +825,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "e317ba73cc61f85da595da46bea65bd7",
+            "id": "b16476cc47255b9f2d4555adc2776940",
             "name": "Get a List of Plants",
             "url": "https\/\/plant",
             "description": "",
@@ -856,11 +856,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "5999313155b7ab805b2eb534ea042a94",
+            "id": "bd34231cb2dc0d8e2016a93f7b20e9f7",
             "name": "Create a Plant",
             "url": "https\/\/plant",
             "description": "Create a New Plant from Seeds, Clones",
@@ -879,11 +879,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "a6461ba4adf2c30f8fbafdd886a31746",
+            "id": "4b0c4ce71a8c3adbc09ee0698f4cd297",
             "name": "Modify Plant Data",
             "url": "https\/\/plant\/{id}",
             "description": "",
@@ -931,11 +931,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "2d466d8e2eab1a26aadc315b4a43b191",
+            "id": "bcfcbbe2515c89d47f990c16427375d4",
             "name": "Delete the Plants",
             "url": "https\/\/plant\/{id}",
             "description": "",
@@ -983,11 +983,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "dfc53777e9cab1992311a08dc01af00a",
+            "id": "e92f16ae129333a950decea5911e9eb3",
             "name": "Collect Materials from a Plant",
             "url": "https\/\/plant\/{id}\/collect",
             "description": "",
@@ -1014,11 +1014,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "389b1c508ce51450c357b7cf78a66429",
+            "id": "bbee152cc49f22ab8e36f13b71dd1865",
             "name": "Close the Plant Operations",
             "url": "https\/\/plant\/{id}\/finish",
             "description": "",
@@ -1052,11 +1052,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "411e97bd0788c397d850f18c3b3abebf",
+            "id": "f4cb1726b2330164b366d8583e8cf31a",
             "name": "Convert Multiple Inventory Items to a Single Batch\/Lot",
             "url": "https\/\/lot\/convert",
             "description": "",
@@ -1075,11 +1075,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "87e24158369436d5f217dbd072cf930f",
+            "id": "09b318451281ee1a3e4d2b8e6f457e66",
             "name": "Get a Search for Lab Items",
             "url": "https\/\/lab",
             "description": "Search\/List All Lab Items the Session has access to, for an Operator it's all the Lab Samples they have sent, for a Laboratory its the Samples that have been sent to them",
@@ -1134,11 +1134,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "db891b4455d10652aff4eda11bbc7fc1",
+            "id": "34f159fc36f9c60197bcbb7b3773cb47",
             "name": "Get a Specific Sample",
             "url": "https\/\/lab\/{id}",
             "description": "",
@@ -1165,11 +1165,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "eeb1db0187b90e34f3fc6055b9142806",
+            "id": "a71f41a17d1f9d54a048ddd9973257a5",
             "name": "Void a Lab Sample",
             "url": "https\/\/lab\/{id}",
             "description": "",
@@ -1196,11 +1196,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "58bdcbc1225f6c1519de2d160fff9eb8",
+            "id": "60bfc7fe637a4806bb42e76babf4f384",
             "name": "Get just the Lab Result Details for this specific Lab Sample",
             "url": "https\/\/lab\/{id}\/result",
             "description": "Lab Results are ....",
@@ -1227,11 +1227,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "c7788dfa727e7e45a9da1fcd66bc3801",
+            "id": "ebe4ebb8c30127551ca8b4c2919e9e61",
             "name": "Modify\/Update the Lab Results",
             "url": "https\/\/lab\/{id}\/result",
             "description": "Modify one or more metrics for a specific Lab result",
@@ -1258,11 +1258,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "372d985f223d731611b91c64fbc1c8fd",
+            "id": "e4e1abc8d2f27d10d4bd76d6f139ebdc",
             "name": "Get Export or Import Transfers List",
             "url": "https\/\/transfer",
             "description": "",
@@ -1310,11 +1310,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "f29ffa6a53b72b4a3af6762e7501b7f2",
+            "id": "b2a9b15a13dd82606371abf694e539ba",
             "name": "Create Transfer",
             "url": "https\/\/transfer",
             "description": "",
@@ -1333,11 +1333,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "a2c7d81ac49359252a4ef9eb49b1e5b6",
+            "id": "630572a5774d7d18e8bd080e4bc6e033",
             "name": "Get Specific Transfer",
             "url": "https\/\/transfer\/{id}",
             "description": "",
@@ -1356,11 +1356,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "3a7ff85acc2656ac6eb408358f14cd91",
+            "id": "c5b14ef701220cc0af1b4fd35802af87",
             "name": "Update a Transfer",
             "url": "https\/\/transfer\/{id}",
             "description": "",
@@ -1387,11 +1387,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "03ebbb052a3d344916d1c6c7c0444fda",
+            "id": "7fa315f5c77e6f1c9a8a1310cb66f7c6",
             "name": "Void the Transfer",
             "url": "https\/\/transfer\/{id}",
             "description": "",
@@ -1418,11 +1418,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "c4b159aa847e88a8ed68162d37c51584",
+            "id": "96ffa52fc52a596e9db07cc6f65426a6",
             "name": "Get Sale Data",
             "url": "https\/\/sale",
             "description": "",
@@ -1441,11 +1441,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "eaeb26cc06ee058621fc1037056e6486",
+            "id": "327de9364bb3ee88b627924741ac142d",
             "name": "Post a Sale",
             "url": "https\/\/sale",
             "description": "",
@@ -1464,11 +1464,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         },
         {
-            "id": "02e7e531a4f7f8e24e81c015e364af56",
+            "id": "21c4278b30ff1e095e5225ab5e76855f",
             "name": "Void a Sale",
             "url": "https\/\/sale",
             "description": "",
@@ -1487,7 +1487,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b03ce2ecc4c7872d22aec82046d7edbf",
+            "collectionId": "6e071743c3f3a7cf9a7a9f04813787ad",
             "rawModeData": ""
         }
     ]
